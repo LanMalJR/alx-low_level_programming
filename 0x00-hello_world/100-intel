@@ -1,15 +1,2 @@
 #!/bin/bash
-
-# Read the C file name from user
-read -p "Enter the C file name: " CFILE
-
-# Export the CFILE variable
-export CFILE
-
-# Generate the assembly code using gcc
 gcc -S -masm=intel $CFILE -o "${CFILE%.*}.s"
-
-# Execute the program
-"./${CFILE%.*}"
-echo "Assembly code generated and saved as ${CFILE%.*}.s"
-
