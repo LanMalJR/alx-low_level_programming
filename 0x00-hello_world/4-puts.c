@@ -1,10 +1,19 @@
+/*
+ * File: 4-puts.c
+ * Author: LanMalJR 
+ */
+
 #include <stdio.h>
+
 /**
- * This will be a program that prints a line with puts function
- * Return: 0
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+
 	return (0);
 }
