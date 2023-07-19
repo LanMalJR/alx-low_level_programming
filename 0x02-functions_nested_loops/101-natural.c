@@ -1,5 +1,5 @@
 
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Prints the sum of the multiples of 3 or 5 up to 1024.
@@ -18,6 +18,6 @@ int main(void)
 	}
 	i++;
 	}
-	printf("%d\n", j)
+	printf("%d\n", j);
 	return (0);
 }
