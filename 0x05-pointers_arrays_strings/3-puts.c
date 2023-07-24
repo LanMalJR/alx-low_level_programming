@@ -4,19 +4,13 @@
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
  */
-
 void _puts(char *str)
 {
-	int count = 0;
+	int i;
 
-	while (count >= 0)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[count] == '\0')
-		{
-			_puts('\n');
-			break;
-		}
-		_puts(str[count]);
-		count++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
