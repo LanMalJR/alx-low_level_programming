@@ -3,9 +3,9 @@
 
 /**
  * print_diagsums - print the sum of diagonals of a
- * 		square matrix.
+ * square matrix.
  * @a: matrix of integers
- * @Size: size of the matrix
+ * @size: size of the matrix
  */
 
 void print_diagsums(int *a, int size)
