@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * _memset - fill n by memeory area
