@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prime_num - calculates whether it's a prime
+ * prime - calculates whether it's a prime
  * number or not
  * @x: number to be estimated
  * @y: iterator
@@ -10,13 +10,13 @@
  * Error, -1 is returned
  */
 
-int prime_num(int x, int y)
+int prime(int x, int y)
 {
 	if (x == y)
 		return (1);
 	else if (x % y == 0)
 		return (0);
-	return (prime_num(x, y + 1));
+	return (prime(x, y + 1));
 }
 
 /**
@@ -27,9 +27,9 @@ int prime_num(int x, int y)
  * Error, -1 is returned
  */
 
-int is_prime_num(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return(prime_num(n, 2));
+	return (prime(n, 2));
 }
