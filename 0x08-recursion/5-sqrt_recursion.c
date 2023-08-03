@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * the_sqr_recursion - it repeats the procedure until
+ * the_sqrt_recursion - it repeats the procedure until
  * the natural s number is found
  * @x: calculate the sq number
  * @y: iterates
+ *
+ * Return: 1 (success)
+ * Error, -1 is returned
  */
 
 int the_sqrt_recursion(int x, int y)
