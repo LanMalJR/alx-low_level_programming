@@ -20,14 +20,14 @@ int prime(int x, int y)
 }
 
 /**
- * is_prime_num - says whether its a prime or not
+ * is_prime_number - says whether its a prime or not
  * @n: num to be checked
  *
  * Return: 1 (success)
  * Error, -1 is returned
  */
 
-int is_prime_num(int n)
+int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
