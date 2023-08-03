@@ -27,7 +27,7 @@ int prime(int x, int y)
  * Error, -1 is returned
  */
 
-int is_prime_number(int n)
+int is_prime_num(int n)
 {
 	if (n <= 1)
 		return (0);
