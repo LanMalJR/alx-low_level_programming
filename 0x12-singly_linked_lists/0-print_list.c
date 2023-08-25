@@ -7,20 +7,23 @@
  *
  * Return: this will be the number of node printed
  */
-size_t print_linked_list(const list_t *h) 
+size_t linked_list(const list_t *h) 
 {
-	size_t node_count = 0;
+	size_t nodez;
+
+	nodez = 0;
 
 	while (h)
 	{
-		if (!h->str)
+
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
+
 		else
-			printf("[%u] %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 
+		nodez++;
 		h = h->next;
-		node_count++;
 	}
-	return (node_count);
-
+	return (nodez);
 }
