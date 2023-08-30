@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - linked linked node is 
+ * insert_nodeint_at_index - linked linked node is
  * inserted
  * @h: the list is pointed to by the node
  * @ndx: the aded node is index nex
@@ -32,7 +32,7 @@ listint_t *insert_nodeint_at_index(listint_t **h, unsigned int ndx, int n)
 	for (i = 0; temp && i < ndx; i++)
 	{
 		if (i == ndx - 1)
-		{	
+		{
 			nw->next = temp->next;
 			temp->next = nw;
 			return (nw);
