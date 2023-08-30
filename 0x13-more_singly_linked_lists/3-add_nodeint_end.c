@@ -7,7 +7,7 @@
  *
  * Return: points to the new node
  */
-listint_t *add_nodeint_end(listint_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **h, const int n)
 {
 	listint_t *nw;
 	listint_t *temp = *h;
@@ -17,8 +17,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL);
 
 	nw->n = n;
-	new->next = NULL;
-
+	nw->next = NULL;
+	
 	if (*h == NULL)
 	{
 		*h = nw;
@@ -30,5 +30,5 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	temp->next = nw;
 
-	return (w);
+	return (nw);
 }
