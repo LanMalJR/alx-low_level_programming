@@ -3,6 +3,7 @@
 /**
  * get_nodeint_at_index - returns linked list node
  * on a certain index
+ * @h: linked list 1st node
  * @ndx: index to be returned
  *
  * Return: Sucess, points to searched node
