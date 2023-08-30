@@ -18,7 +18,7 @@ listint_t *add_nodeint_end(listint_t **h, const int n)
 
 	nw->n = n;
 	nw->next = NULL;
-	
+
 	if (*h == NULL)
 	{
 		*h = nw;
