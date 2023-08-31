@@ -10,20 +10,15 @@ unsigned int binary_to_uint(const char *bn)
 	int i = 0;
 
 	if (!bn)
-		return 0;
+		return (0);
 
 	for (i = 0; bn[i]; i++)
-    	{	
+	{
 		if (bn[i] < '0' || bn[i] > '1')
-		{
-		return (0);
+			return (0);
+
 		dc_vl = 2 * dc_vl + (bn[i] - '0');
-		}
-		else
-		{
-		return 0;
-		}
 	}
 
-	return dc_vl;
+	return (dc_vl);
 }
