@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * get_bit - Retrieves the value of a bit at a specific index in a decimal number.
+ * get_bit - Retrieves the value of a bit at a
+ * specific index in a decimal number.
  * @n: The number to examine.
  * @ndx: The index of the bit to retrieve.
  *
