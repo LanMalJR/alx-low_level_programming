@@ -27,6 +27,6 @@ int create_file(const char *filenm, char *text_con)
 	if (rdc == -1 || wrt == -1)
 		return (-1);
 
-	close (rdc);
+	close(rdc);
 	return (1);
 }
