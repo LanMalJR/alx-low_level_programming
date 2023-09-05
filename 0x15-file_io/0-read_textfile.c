@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Reads a specified number of letters from 
+ * read_textfile - Reads a specified number of letters from
  * a text file and prints them to STDOUT.
  * @filename: The name of the text file to be read.
  * @letters: The number of letters (characters) to be read and printed.
@@ -25,6 +25,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buffr);
 	close(rdc);
-	return(wrt);
+	return (wrt);
 }
 
