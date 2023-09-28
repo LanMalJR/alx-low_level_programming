@@ -10,16 +10,16 @@
  */
 unsigned int flip_bits(unsigned long int num1, unsigned long int num2)
 {
-    int i, count = 0;
-    unsigned long int currnt;
-    unsigned long int exclsve = num1 ^ num2;
+	int i, count = 0;
+	unsigned long int currnt;
+	unsigned long int exclsve = num1 ^ num2;
 
-    for (i = 63; i >= 0; i--)
-    {
-        currnt = exclsve >> i;
-        if (currnt & 1)
-            count++;
-    }
+	for (i = 63; i >= 0; i--)
+	{
+		currnt = exclsve >> i;
+		if (currnt & 1)
+		count++;
+	}
 
-    return (count);
+	return (count);
 }
