@@ -12,7 +12,7 @@ void print_binary(unsigned long int num)
 
 	for (i = 63; i >= 0; i--)
 	{
-		currnt = n >> i;
+		currnt = num >> i;
 
 		if (currnt & 1)
 		{
