@@ -9,7 +9,8 @@
  * @argv: Arguments vector.
  *
  * This function checks if the source and destination files can be opened.
- * If either file cannot be opened, it prints an error message and exits the program.
+ * If either file cannot be opened,
+ * it prints an error message and exits the program.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
