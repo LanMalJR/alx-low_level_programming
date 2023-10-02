@@ -6,7 +6,7 @@
  * @filename: Name of the text file to read.
  * @letters: Number of letters (bytes) to read and print.
  *
- * Return: Number of bytes successfully read and printed to 
+ * Return: Number of bytes successfully read and printed to
  * STDOUT.
  *         0 when the function fails or when `filename` is NULL.
  */
