@@ -1,13 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
- * main - check the code
+ * main - entry point, checks code
  *
  * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
-    printf("%d\n", _strlen("My Dyn Lib"));
-    return (EXIT_SUCCESS);
+    printf("%ld\n", strlen("My Dyn Lib"));
+    return (0);
 }
