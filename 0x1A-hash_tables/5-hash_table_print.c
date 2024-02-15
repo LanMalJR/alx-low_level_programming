@@ -4,29 +4,28 @@
  * @ht: The hash table to be printed.
  */
 
-#include "hash_tables.h"
+void hash_table_print(const hash_table_t *ht)
+{
+	unsigned long int i;
+	hash_node_t *element;
+	bool is_printed = false;
 
-void hash_table_print(const hash_table_t *ht) {
-    if (ht == NULL || ht->array == NULL) {
-        fprintf(stderr, "Error: Invalid hash table.\n");
-        return;
-    }
+	printf("{");
+	for (i = 0; i < ht->size; i++)
+	{
+		element = ht->array[i];
 
-    printf("{");
-    bool is_first = true; /* Flag to check if it's the first element in the hash table */ 
+		while (element != NULL)
+		{
+			if (is_printed == true)
+			{
+				printf(", ");
+			}
+			printf("'%s': '%s'", element->key, element->value);
+			is_printed = true;
 
-    for (size_t i =  0; i < ht->size; i++) {
-        hash_node_t *element = ht->array[i];
-
-        while (element != NULL) {
-            if (!is_first) {
-                printf(", ");
-            } else {
-                is_first = false;
-            }
-            printf("'%s': '%s'", element->key, element->value);
-            element = element->next;
-        }
-    }
-    printf("}\n");
+			element = element->next;
+		}
+	}
+	printf("}\n");
 }
