@@ -26,3 +26,4 @@
 23. [0x18-dynamic_libraries](https://github.com/LanMalJR/alx-low_level_programming/tree/master/0x18-dynamic_libraries)
 24. [0x1A-hash_tables](https://github.com/LanMalJR/alx-low_level_programming/tree/master/0x1A-hash_tables)
 25. [0x1C-makefiles](https://github.com/LanMalJR/alx-low_level_programming/tree/master/0x1C-makefiles)
+26. [0x1E-search_algorithms](https://github.com/LanMalJR/alx-low_level_programming/tree/master/0x1E-search_algorithms)
